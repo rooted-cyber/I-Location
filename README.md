@@ -11,4 +11,4 @@
  </pre>
  
  <pre>
- start command :- TI </pre>
+ start command :- seeker</pre>
