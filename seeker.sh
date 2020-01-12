@@ -12,9 +12,24 @@ logo () {
 		}
 		ngrok-server () {
 			cd ~/seeker-2
-			./ngrok http 3333 > /dev/null 2>&1
 			python3 seeker.py --tunnel manual --subdomain zomato
 			}
+			link () {
+				link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
+				printf "\e[1;92m[\e[0m*\e[1;92m] Your link:\e[0m\e[1;77m %s\e[0m\n" $link
+				printf "\n"
+				printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Waiting to open link,\e[0m\e[1;77m Press Ctrl + C to exit...\e[0m\n"|lolcat
+				while [ true ]; do
+
+
+
+				if [[ -e "ip.txt" ]]; then
+				printf "\n\e[1;92m[\e[0m+\e[1;93m] Your Link Opened\n"|lolcat
+				catch_ip
+				rm -rf ip.txt
+				fi
+				}
+
 
 			
 	cd $PREFIX/bin
@@ -47,12 +62,14 @@ logo () {
 	logo
 	printf "	[1] Ngrok\n"|lolcat --animate
 	printf "	[2] Serveo\n"|lolcat --animate
-	printf "	[3] Exit\n\n\n"|lolcat --animate
+	printf "	[3] Ngrok link\n\n\n"|lolcat --animate
+	printf "	[4] Exit\n\n\n"|lolcat --animate
 	echo -e -n "\033[93mseeker\033[94m@\033[91m(\033[96mtool\033[91m)\033[95m --> "
 	read s
 	case $s in
 	1)ngrok-server ;;
 	2)python3 seeker.py ;;
-	3)exit ;;
+	3)link ;;
+	4)exit ;;
 	*)seeker ;;
 	esac
