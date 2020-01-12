@@ -44,7 +44,7 @@ logo () {
 	echo "bash seeker.sh" >> $PREFIX/bin/seeker
 	chmod 777 $PREFIX/bin/seeker
 	printf "\n\n Now you can use this command :- seeker\n"
-	printf "\n\n Press enter to staet\n\n"
+	printf "\n\n Press enter to start\n\n"
 	read
 	fi
 	clear
@@ -52,8 +52,8 @@ logo () {
 	logo
 	printf "	[1] Ngrok\n"|lolcat --animate
 	printf "	[2] Serveo\n"|lolcat --animate
-	printf "	[3] Ngrok link\n\n\n"|lolcat --animate
-	printf "	[4] Exit\n\n\n"|lolcat --animate
+	#printf "	[3] Ngrok link\n\n\n"|lolcat --animate
+	printf "	[3] Exit\n\n\n"|lolcat --animate
 	echo -e -n "\033[93mseeker\033[94m@\033[91m(\033[96mtool\033[91m)\033[95m --> "
 	read s
 	case $s in
