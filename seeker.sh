@@ -11,6 +11,8 @@ logo () {
 		fi
 		}
 		ngrok-server () {
+			cd ~/seeker-2
+			./ngrok http 3333 > /dev/null 2>&1
 			python3 seeker.py --tunnel manual --subdomain zomato
 			}
 
