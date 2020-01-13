@@ -10,8 +10,22 @@ logo () {
 		unzip .seeker.zip
 		fi
 		}
+		check () {
+	cd ~/seeker-2
+	if [ -e ngrok ];then
+	echo
+	else
+	printf "\n\033[91m [×] ngrok not found\n\n"
+	printf "\033[92m [+] Downloading ngrok......\n\n"
+	wget https://github.com/rooted-cyber/upload/raw/master/ngrok.zip > /dev/null 2>&1
+	unzip ngrok.zip > /dev/null 2>&1
+	chmod 700 ngrok
+	rm -f ngrok.zip
+	fi
+	}
 		ngrok-server () {
 			cd ~/seeker-2
+			check
 			python3 seeker.py --tunnel manual --subdomain zomato
 			}
 			link () {
