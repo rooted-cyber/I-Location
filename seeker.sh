@@ -58,7 +58,7 @@ logo () {
 	printf "\n\n \033[96m [+] Creating shortcut...."
 	sleep 2
 	echo "#!/data/data/com.termux/files/usr/bin/sh" >> $PREFIX/bin/seeker
-	echo "cd seeker-2" >> /$PREFIX/bin/seeker
+	echo "cd ~/seeker-2" >> /$PREFIX/bin/seeker
 	echo "bash seeker.sh" >> $PREFIX/bin/seeker
 	chmod 777 $PREFIX/bin/seeker
 	printf "\n\n Now you can use this command :- seeker\n"
