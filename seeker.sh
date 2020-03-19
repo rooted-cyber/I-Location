@@ -30,6 +30,7 @@ logo () {
 		ngrok-server () {
 			cd ~/seeker-2
 			ngrok_run
+			cd ~/seeker-2
 			python3 seeker.py --tunnel manual --subdomain zomato
 			}
 			link () {
@@ -37,10 +38,8 @@ logo () {
 				printf "\e[1;92m[\e[0m*\e[1;92m] Your link:\e[0m\e[1;77m %s\e[0m\n" $link
 				printf "\n"
 				}
-
-
-			
-	cd $PREFIX/bin
+				sett () {
+					cd $PREFIX/bin
 	if [ -e seeker ];then
 	echo
 	else
@@ -65,6 +64,8 @@ logo () {
 	printf "\n\n Press enter to start\n\n"
 	read
 	fi
+	}
+	sett
 	clear
 	echo
 	logo
