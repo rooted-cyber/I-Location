@@ -68,7 +68,27 @@ logo () {
 	sett
 	clear
 	echo
-	logo
+	check () {
+		cd $PREFIX/bin
+		if [ -e lolcat ];then
+		echo
+		else
+		apt install python
+		pip install lolcat
+		fi
+		}
+		check2 () {
+			cd ~/seeker-2
+			if [ -e seeker.py ];then
+			echo
+			else
+			unzip .seeker.zip
+			fi
+			}
+			check
+			check2
+		clear
+		logo
 	printf "	[1] Ngrok\n"|lolcat --animate
 	printf "	[2] Serveo\n"|lolcat --animate
 	#printf "	[3] Ngrok link\n\n\n"|lolcat --animate
