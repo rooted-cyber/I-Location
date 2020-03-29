@@ -63,9 +63,29 @@ logo () {
 	printf "\n\n Now you can use this command :- seeker\n"
 	printf "\n\n Press enter to start\n\n"
 	read
+	menu
 	fi
 	}
-	sett
+	fool () {
+		clear
+		printf "\n\n\033[91m You are totally mad.\n\nFirst learn basic and install seeker-2 \n\n"
+		printf "\033[92m Follow my instruction to install seeker-2:-\n\n"
+		printf " First open Termux
+		Then type this command :-
+		
+		 $ apt update
+		 $ apt upgrade
+		 $ apt install git
+		 $ cd $‌HOME
+		 $ git clone https://github.com/rooted-cyber/seeker-2
+		 $ cd seeker-2
+		 $ bash seeker.sh
+		 
+		 and wait for setuping and starting command :-
+		 seeker"
+		 }
+	
+	
 	clear
 	echo
 	check () {
@@ -85,6 +105,7 @@ logo () {
 			unzip .seeker.zip
 			fi
 			}
+			menu () {
 			check
 			check2
 		clear
@@ -102,3 +123,11 @@ logo () {
 	4)exit ;;
 	*)seeker ;;
 	esac
+	}
+	cd ~
+	if [ -e seeker-2 ];then
+	sett
+	else
+	fool
+	fi
+	
