@@ -39,8 +39,8 @@ logo () {
 				printf "\n"
 				}
 				sett () {
-					cd $PREFIX/bin
-	if [ -e seeker ];then
+cd $PREFIX/bin
+if [ -e seeker ];then
 	echo
 	else
 	printf "\n\n \033[92m [*] Requirements installing....\n\n"
@@ -51,6 +51,7 @@ logo () {
 	apt install python
 	apt install wget
 	pip install lolcat
+apt install php
 	setup
 	bash termux*
 	clear
