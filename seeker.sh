@@ -17,7 +17,7 @@ logo () {
 			killall -2 ngrok > /dev/null 2>&1
 			./ngrok http 8080 > /dev/null 2>&1 &
 			else
-			printf "\n\033[91m [×] ngrok not found\n\n"
+			printf "\n\033[91m [?] ngrok not found\n\n"
 			printf "\033[92m [+] Downloading ngrok......\n\n"
 			wget https://github.com/rooted-cyber/upload/raw/master/ngrok.zip > /dev/null 2>&1
 			unzip ngrok.zip > /dev/null 2>&1
@@ -72,17 +72,17 @@ apt install php
 		printf "\n\n\033[91m You are totally mad.\n\nFirst learn basic and install seeker-2 \n\n"
 		printf "\033[92m Follow my instruction to install seeker-2:-\n\n"
 		printf " First open Termux
-		Then type this command :-
+Then type this command :-
 		
-		 $ apt update
-		 $ apt upgrade
-		 $ apt install git
-		 $ cd $‌HOME
-		 $ git clone https://github.com/rooted-cyber/seeker-2
-		 $ cd seeker-2
-		 $ bash seeker.sh
+$ apt update
+$ apt uugrade
+$ apt install git
+$ cd $?�HOME
+$ git clone https://github.com/rooted-cyber/seeker-2
+$ cd seeker-2
+$ bash seeker.sh
 		 
-		 and wait for setuping and starting command :-
+And wait for setuping and starting command :-
 		 seeker"
 		 }
 	
