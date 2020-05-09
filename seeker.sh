@@ -19,7 +19,7 @@ logo () {
 			else
 			printf "\n\033[91m [?] ngrok not found\n\n"
 			printf "\033[92m [+] Downloading ngrok......\n\n"
-			wget https://github.com/rooted-cyber/upload/raw/master/ngrok.zip > /dev/null 2>&1
+			wget https://github.com/rooted-cyber/upload/raw/master/ngrok.zip
 			unzip ngrok.zip > /dev/null 2>&1
 			chmod 700 ngrok
 			rm -f ngrok.zip
@@ -41,7 +41,7 @@ logo () {
 				sett () {
 cd $PREFIX/bin
 if [ -e seeker ];then
-	echo
+	menu
 	else
 	printf "\n\n \033[92m [*] Requirements installing....\n\n"
 	sleep 1
@@ -51,10 +51,11 @@ if [ -e seeker ];then
 	apt install python
 	apt install wget
 	pip install lolcat
-apt install php
+	apt install php
 	setup
 	bash termux*
 	clear
+	ngrok_run
 	printf "\n\n \033[96m [+] Creating shortcut...."
 	sleep 2
 	echo "#!/data/data/com.termux/files/usr/bin/sh" >> $PREFIX/bin/seeker
@@ -77,7 +78,7 @@ Then type this command :-
 $ apt update
 $ apt uugrade
 $ apt install git
-$ cd $?ŒHOME
+$ cd $?ï¿½HOME
 $ git clone https://github.com/rooted-cyber/seeker-2
 $ cd seeker-2
 $ bash seeker.sh
