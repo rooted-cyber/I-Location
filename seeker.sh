@@ -141,7 +141,7 @@ And wait for setuping and starting command :-
 		}
 		check2 () {
 			cd ~/seeker-2
-			if [ -e seeker.py ];then
+			if [ -e serveo.py ];then
 			echo
 			else
 			unzip .seeker.zip
