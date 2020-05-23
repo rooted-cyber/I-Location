@@ -1,8 +1,8 @@
 # Seeker
 
-<img src="https://github.com/rooted-cyber/I-Location/image/raw/master/I-Location.png" style="width:300px;height:400px;">
-<img src="https://github.com/rooted-cyber/I-Location/image/raw/master/I-Location2.png" style="width:300px;height:400px;">
-<img src="https://github.com/rooted-cyber/I-Location/image/raw/master/I-Location3.png" style="width:300px;height:400px;">
+<img src="https://github.com/rooted-cyber/I-Location/raw/master/image/I-Location.png" style="width:300px;height:400px;">
+<img src="https://github.com/rooted-cyber/I-Location/raw/master/image/I-Location2.png" style="width:300px;height:400px;">
+<img src="https://github.com/rooted-cyber/I-Location/raw/master/image/I-Location3.png" style="width:300px;height:400px;">
 
 <pre>
  $ apt update
