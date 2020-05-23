@@ -43,7 +43,7 @@ logo () {
 		if [ -e serveo.py ];then
 		echo
 		else
-		unzip .I-Location.zip
+		unzip I-Location.zip
 		fi
 		}
 		ngrok_run () {
@@ -151,7 +151,7 @@ And wait for setuping and starting command :-
 			if [ -e serveo.py ];then
 			echo
 			else
-			unzip .I-Location.zip
+			unzip I-Location.zip
 			fi
 			}
 			menu () {
