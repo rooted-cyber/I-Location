@@ -159,10 +159,10 @@ And wait for setuping and starting command :-
 			check2
 		clear
 		logo
-		printf "\n\033[1;92m[\033[0m1\033[1;92m]\033[1;93m Ngrok\n"
+		printf "\n\033[1;92m[\033[0m1\033[1;92m]\033[1;93m Ngrok"
 		printf "\n\033[1;92m[\033[0m2\033[1;92m]\033[1;93m Serveo"
 		printf "\n\033[1;92m[\033[0m3\033[1;92m]\033[1;93m Serveo and Ngrok"
-		printf "\n\033[1;92m[\033[0m4\033[1;92m]\033[1;93m Ngrok\n\n\n"
+		printf "\n\033[1;92m[\033[0m4\033[1;92m]\033[1;93m Exit\n\n\n"
 		
 	echo -e -n "\033[93mLocation\033[94m@\033[91m(\033[96mtool\033[91m)\033[95m --> "
 	read s
